@@ -24,7 +24,7 @@ def getDictionary(dataset, day):
 	 		"kithBogo": "https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/268d082e-b57e-427d-b4c4-3567b4fcf388/online", 
 	 		"adidasTrip": "https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/07325ca6-da6e-4fb5-ae83-6fa0826eeaeb/online", 
 	 		"hilfig":"https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/af36f863-ebd2-4636-b487-0d1c47da65c4/online", 
-	 		"beluga":"https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/5a335127-379a-4931-8991-9291ccb54d4c/online"
+	 		"beluga":"https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/f6cfb93f-096a-4ee1-85bf-b92151e465b5/online"
 	 		}
 
 	response_scoring = requests.post(links[dataset], json=payload_scoring, headers=header)
