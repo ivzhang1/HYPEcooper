@@ -302,7 +302,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('kermit.jpg') center top no-repeat;
+  background: url('/templates/kermit.jpg') center top no-repeat;
   background-size: cover;
   height: 1000px;
   color:white;
