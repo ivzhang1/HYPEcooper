@@ -27,8 +27,8 @@ def getDictionary(dataset, day):
 	 		"hilfig":"https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/af36f863-ebd2-4636-b487-0d1c47da65c4/online", 
 	 		"beluga":"https://us-south.ml.cloud.ibm.com/v3/wml_instances/073a989d-6364-4e9a-b8ca-d7fbf1823d4c/deployments/f6cfb93f-096a-4ee1-85bf-b92151e465b5/online"
 	 		}
-	magic = open('chucktay.csv', "w")
-	for i in range(0, day):
+	magic = open('beluga.csv', "w")
+	for i in range(500, day):
 		payload_scoring = {"fields": ["time"], "values": [[i]]}
 		response_scoring = requests.post(links[dataset], json=payload_scoring, headers=header)
 
@@ -37,4 +37,4 @@ def getDictionary(dataset, day):
 	magic.close()
 	return (json.loads(response_scoring.text)['values'][0][2])
 
-print(getDictionary("chuckTay", 700))
+print(getDictionary("beluga", 600))
