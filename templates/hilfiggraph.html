@@ -1,0 +1,8 @@
+	{% if line_out_data %}
+	      {% for line_chart_data in line_out_data %}
+					<img href=pic>
+				   <embed type="image/svg+xml" src={{line_chart_data|safe}} style='max-width:1000px'/>
+	      {% endfor %}
+			{% else %}
+			 <p> hi</p>
+			{% endif %}
